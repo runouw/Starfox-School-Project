@@ -15,6 +15,7 @@ Gameplay similar to how Starfox 64 behaves. There's an aiming reticule that draw
 ### Controls
  * WASD - Movement
  * QE - Tilt 
+ * Spacebar - Fire laser
  
 ## Collision Detection
 When a laser is fired, a collision check is performed by testing ray intersection with the triangles in the scene. Enemy collision is determined by colliding the ray with a bounding sphere.
