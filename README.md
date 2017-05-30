@@ -26,7 +26,7 @@ The lighting is achieved by applying a common technique called deferred lighting
 The player's lasers and the enemy ship's laser attacks emit light which can be seen by this effect.
 
 # Contributors
-* **Robert Hewitt** - *Building Procedure, Cars, Clouds, Lighting* - [Runouw](https://github.com/runouw)
+* **Robert Hewitt** - *Programming, Design, Gameplay* - [Runouw](https://github.com/runouw)
 
 ## License
 
