@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\window">
+      <UniqueIdentifier>{3f895508-3914-4b33-8eda-f8e076639c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\window">
+      <UniqueIdentifier>{6c9c20c4-5c4f-4a73-9757-4b2816cbbb13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rtools">
+      <UniqueIdentifier>{67d69730-dae8-4081-87bf-b20ab3e75c6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rtools">
+      <UniqueIdentifier>{ba6976b7-4dd9-4324-8792-73db72479368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gltools">
+      <UniqueIdentifier>{aeca940d-18e3-4edf-8fa0-1350cfcc50aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gltools">
+      <UniqueIdentifier>{0e3fd4b0-ae48-4fd3-8e62-3d74aff39213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gsim">
+      <UniqueIdentifier>{b0469bd9-b5fd-4d3c-ae7c-4fc105342723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gsim">
+      <UniqueIdentifier>{f984ae0a-83f4-4104-ae63-be8381fc762e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game">
+      <UniqueIdentifier>{7196b0cb-11b6-4671-960e-bfe7040245e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{1a017a68-8820-4a0d-aed9-e931306ede75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rtools\ai">
+      <UniqueIdentifier>{b8fe4864-0339-44fe-9a83-c05352ad1b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\models">
+      <UniqueIdentifier>{e76f5174-14e8-429d-a03c-c35742ef21db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\models">
+      <UniqueIdentifier>{15f70a10-9a0c-4836-b3a8-450e4faabba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\enemy">
+      <UniqueIdentifier>{89deb8d2-93e4-4ca4-bd2f-cc0548ef1787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\projectile">
+      <UniqueIdentifier>{a8506bf2-8674-43e9-adcb-8e5b94602eee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\enemy">
+      <UniqueIdentifier>{aba1e42e-9218-4649-8aee-79ab059ec9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\projectile">
+      <UniqueIdentifier>{c1d135c1-406f-4c80-a430-5340676e3437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\scene">
+      <UniqueIdentifier>{42401a86-b454-4a25-bbd0-5cc49b77ce29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\scene">
+      <UniqueIdentifier>{7151c763-7063-4702-a2d6-6d659b4c400a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rtools\ai">
+      <UniqueIdentifier>{d6b18ed0-ab8b-44bc-9d26-bd0f694edc39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rtools\post">
+      <UniqueIdentifier>{89b074f4-91a3-434e-993d-6fc3d966ac77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rtools\post">
+      <UniqueIdentifier>{709fcdb0-6156-4582-8513-64e7c4ed5d39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\particle">
+      <UniqueIdentifier>{f3748247-b5f7-4464-9808-429f638bf612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\particle">
+      <UniqueIdentifier>{3f7be225-96c6-42fa-8447-3c7b02b07a71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\app_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gltools\glframebuffer.cpp">
+      <Filter>Source Files\gltools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gltools\globject.cpp">
+      <Filter>Source Files\gltools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gltools\glprogram.cpp">
+      <Filter>Source Files\gltools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gltools\glshader.cpp">
+      <Filter>Source Files\gltools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gltools\gltexture.cpp">
+      <Filter>Source Files\gltools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gltools\gltools.cpp">
+      <Filter>Source Files\gltools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gltools\sgnode.cpp">
+      <Filter>Source Files\gltools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gsim\gs.cpp">
+      <Filter>Source Files\gsim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gsim\gs_array.cpp">
+      <Filter>Source Files\gsim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gsim\gs_color.cpp">
+      <Filter>Source Files\gsim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gsim\gs_image.cpp">
+      <Filter>Source Files\gsim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gsim\gs_mat.cpp">
+      <Filter>Source Files\gsim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gsim\gs_quat.cpp">
+      <Filter>Source Files\gsim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gsim\gs_vec.cpp">
+      <Filter>Source Files\gsim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gsim\gs_vec2.cpp">
+      <Filter>Source Files\gsim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\keys.cpp">
+      <Filter>Source Files\rtools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\engine.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\glo_quad.cpp">
+      <Filter>Source Files\rtools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\ai\textures.cpp">
+      <Filter>Source Files\rtools\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\ai\model.cpp">
+      <Filter>Source Files\rtools\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\ai\material.cpp">
+      <Filter>Source Files\rtools\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\ai\mesh.cpp">
+      <Filter>Source Files\rtools\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\models\arwing.cpp">
+      <Filter>Source Files\game\models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\player.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\ai\shaders.cpp">
+      <Filter>Source Files\rtools\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\utils.cpp">
+      <Filter>Source Files\rtools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\engine_debugcam.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\engine_starfox.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\projectile\laser.cpp">
+      <Filter>Source Files\game\projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\scene\scene_asteroid1.cpp">
+      <Filter>Source Files\game\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gltools\glgeometrybuffer.cpp">
+      <Filter>Source Files\gltools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\post\deferred.cpp">
+      <Filter>Source Files\rtools\post</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtools\screenquad.cpp">
+      <Filter>Source Files\rtools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\enemy\enemy_ship1.cpp">
+      <Filter>Source Files\game\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\particle\particles.cpp">
+      <Filter>Source Files\game\particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\particle\particlebank.cpp">
+      <Filter>Source Files\game\particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\models\model_laser.cpp">
+      <Filter>Source Files\game\models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\enemy\boss_biggun.cpp">
+      <Filter>Source Files\game\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\window\window.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\enemy\enemy_ship2.cpp">
+      <Filter>Source Files\game\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\game\enemy\enemy.cpp">
+      <Filter>Source Files\game\enemy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\window\window.h">
+      <Filter>Header Files\window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gltools\gltools.h">
+      <Filter>Header Files\gltools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gltools\sgnode.h">
+      <Filter>Header Files\gltools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gsim\gs.h">
+      <Filter>Header Files\gsim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gsim\gs_array.h">
+      <Filter>Header Files\gsim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gsim\gs_color.h">
+      <Filter>Header Files\gsim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gsim\gs_image.h">
+      <Filter>Header Files\gsim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gsim\gs_mat.h">
+      <Filter>Header Files\gsim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gsim\gs_quat.h">
+      <Filter>Header Files\gsim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gsim\gs_vec.h">
+      <Filter>Header Files\gsim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gsim\gs_vec2.h">
+      <Filter>Header Files\gsim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\glactivity.h">
+      <Filter>Header Files\rtools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\keys.h">
+      <Filter>Header Files\rtools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\engine.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\glo_quad.h">
+      <Filter>Header Files\rtools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\ai\model.h">
+      <Filter>Header Files\rtools\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\ai\textures.h">
+      <Filter>Header Files\rtools\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\ai\material.h">
+      <Filter>Header Files\rtools\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\ai\mesh.h">
+      <Filter>Header Files\rtools\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\models\arwing.h">
+      <Filter>Header Files\game\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\player.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\ai\shaders.h">
+      <Filter>Header Files\rtools\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\utils.h">
+      <Filter>Header Files\rtools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\engine_debugcam.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\engine_starfox.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\scene\scene.h">
+      <Filter>Header Files\game\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\scene\scene_asteroid1.h">
+      <Filter>Header Files\game\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\post\deferred.h">
+      <Filter>Header Files\rtools\post</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtools\screenquad.h">
+      <Filter>Header Files\rtools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\projectile\projectiles.h">
+      <Filter>Header Files\game\projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\enemy\enemies.h">
+      <Filter>Header Files\game\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\particle\particles.h">
+      <Filter>Header Files\game\particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\particle\particlebank.h">
+      <Filter>Header Files\game\particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\game\models\model_laser.h">
+      <Filter>Header Files\game\models</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\res\readme.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

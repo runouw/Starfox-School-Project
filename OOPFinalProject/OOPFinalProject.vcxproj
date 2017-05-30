@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F8068DFD-13A5-4CBB-9A03-D6245B919706}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OOPFinalProject</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <IncludePath>$(SolutionDir)src;$(SolutionDir)lib\assimp;$(SolutionDir)lib\glew;$(SolutionDir)lib\freeglut;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib\glew;$(SolutionDir)lib\freeglut;$(SolutionDir)lib\assimp;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)obj\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)src;$(SolutionDir)lib\assimp;$(SolutionDir)lib\glew;$(SolutionDir)lib\freeglut;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib\glew;$(SolutionDir)lib\freeglut;$(SolutionDir)lib\assimp;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)\obj\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;freeglut.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>xcopy /y /e /i  "$(SolutionDir)bin" "$(TargetDir)"
+xcopy /y /e /i  "$(SolutionDir)res" "$(SolutionDir)obj\res"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;freeglut.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /e /i  "$(SolutionDir)bin" "$(TargetDir)"
+xcopy /y /e /i  "$(SolutionDir)res" "$(SolutionDir)obj\res"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\app_main.cpp" />
+    <ClCompile Include="..\src\app_window.cpp" />
+    <ClCompile Include="..\src\game\enemy\boss_biggun.cpp" />
+    <ClCompile Include="..\src\game\enemy\enemy.cpp" />
+    <ClCompile Include="..\src\game\enemy\enemy_ship1.cpp" />
+    <ClCompile Include="..\src\game\enemy\enemy_ship2.cpp" />
+    <ClCompile Include="..\src\game\engine.cpp" />
+    <ClCompile Include="..\src\game\engine_debugcam.cpp" />
+    <ClCompile Include="..\src\game\engine_starfox.cpp" />
+    <ClCompile Include="..\src\game\models\arwing.cpp" />
+    <ClCompile Include="..\src\game\models\model_laser.cpp" />
+    <ClCompile Include="..\src\game\particle\particlebank.cpp" />
+    <ClCompile Include="..\src\game\particle\particles.cpp" />
+    <ClCompile Include="..\src\game\player.cpp" />
+    <ClCompile Include="..\src\game\projectile\laser.cpp" />
+    <ClCompile Include="..\src\game\scene\scene_asteroid1.cpp" />
+    <ClCompile Include="..\src\gltools\glframebuffer.cpp" />
+    <ClCompile Include="..\src\gltools\glgeometrybuffer.cpp" />
+    <ClCompile Include="..\src\gltools\globject.cpp" />
+    <ClCompile Include="..\src\gltools\glprogram.cpp" />
+    <ClCompile Include="..\src\gltools\glshader.cpp" />
+    <ClCompile Include="..\src\gltools\gltexture.cpp" />
+    <ClCompile Include="..\src\gltools\gltools.cpp" />
+    <ClCompile Include="..\src\gltools\sgnode.cpp" />
+    <ClCompile Include="..\src\gsim\gs.cpp" />
+    <ClCompile Include="..\src\gsim\gs_array.cpp" />
+    <ClCompile Include="..\src\gsim\gs_color.cpp" />
+    <ClCompile Include="..\src\gsim\gs_image.cpp" />
+    <ClCompile Include="..\src\gsim\gs_mat.cpp" />
+    <ClCompile Include="..\src\gsim\gs_quat.cpp" />
+    <ClCompile Include="..\src\gsim\gs_vec.cpp" />
+    <ClCompile Include="..\src\gsim\gs_vec2.cpp" />
+    <ClCompile Include="..\src\rtools\ai\material.cpp" />
+    <ClCompile Include="..\src\rtools\ai\mesh.cpp" />
+    <ClCompile Include="..\src\rtools\ai\model.cpp" />
+    <ClCompile Include="..\src\rtools\ai\shaders.cpp" />
+    <ClCompile Include="..\src\rtools\ai\textures.cpp" />
+    <ClCompile Include="..\src\rtools\glo_quad.cpp" />
+    <ClCompile Include="..\src\rtools\keys.cpp" />
+    <ClCompile Include="..\src\rtools\post\deferred.cpp" />
+    <ClCompile Include="..\src\rtools\screenquad.cpp" />
+    <ClCompile Include="..\src\rtools\utils.cpp" />
+    <ClCompile Include="..\src\window\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\app_window.h" />
+    <ClInclude Include="..\src\game\enemy\enemies.h" />
+    <ClInclude Include="..\src\game\engine.h" />
+    <ClInclude Include="..\src\game\engine_debugcam.h" />
+    <ClInclude Include="..\src\game\engine_starfox.h" />
+    <ClInclude Include="..\src\game\models\arwing.h" />
+    <ClInclude Include="..\src\game\models\model_laser.h" />
+    <ClInclude Include="..\src\game\particle\particlebank.h" />
+    <ClInclude Include="..\src\game\particle\particles.h" />
+    <ClInclude Include="..\src\game\player.h" />
+    <ClInclude Include="..\src\game\projectile\projectiles.h" />
+    <ClInclude Include="..\src\game\scene\scene.h" />
+    <ClInclude Include="..\src\game\scene\scene_asteroid1.h" />
+    <ClInclude Include="..\src\gltools\gltools.h" />
+    <ClInclude Include="..\src\gltools\sgnode.h" />
+    <ClInclude Include="..\src\gsim\gs.h" />
+    <ClInclude Include="..\src\gsim\gs_array.h" />
+    <ClInclude Include="..\src\gsim\gs_color.h" />
+    <ClInclude Include="..\src\gsim\gs_image.h" />
+    <ClInclude Include="..\src\gsim\gs_mat.h" />
+    <ClInclude Include="..\src\gsim\gs_quat.h" />
+    <ClInclude Include="..\src\gsim\gs_vec.h" />
+    <ClInclude Include="..\src\gsim\gs_vec2.h" />
+    <ClInclude Include="..\src\rtools\ai\material.h" />
+    <ClInclude Include="..\src\rtools\ai\mesh.h" />
+    <ClInclude Include="..\src\rtools\ai\model.h" />
+    <ClInclude Include="..\src\rtools\ai\shaders.h" />
+    <ClInclude Include="..\src\rtools\ai\textures.h" />
+    <ClInclude Include="..\src\rtools\glactivity.h" />
+    <ClInclude Include="..\src\rtools\glo_quad.h" />
+    <ClInclude Include="..\src\rtools\keys.h" />
+    <ClInclude Include="..\src\rtools\post\deferred.h" />
+    <ClInclude Include="..\src\rtools\screenquad.h" />
+    <ClInclude Include="..\src\rtools\utils.h" />
+    <ClInclude Include="..\src\window\window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\res\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
