@@ -1,6 +1,8 @@
 # Starfox-School-Project
 ![Starfox OOP demo](https://github.com/runouw/Starfox-School-Project/blob/master/demo_pic/demo%203.jpg)
 
+[Demo on YouTube](https://www.youtube.com/watch?v=ZhU7qlP5E5w)
+
 This was a school project to demonstrate OOP principles in C++. I am uploading the source so others can benefit from it.
 
 Created with Visual Studio 2013 using freeglut and glew for OpenGL. Models loaded using [Open Asset Import Library](http://assimp.sourceforge.net/). There was code provided by the school that we had to use which is located in the "gsim" directory as well parts of "app_window.h" and "app_window.cpp".
